@@ -280,7 +280,7 @@ function getGermanCars(inventory) {
  * Create arrow function versions of the following commented-out functions:
  *
  * const sum = function (a, b) {
- *   return a + b
+ *   return a  +  b
  * }
  *
  * const addFive = function(num) {
@@ -296,7 +296,7 @@ const addFive = num => num + 5;
 const argTimesTwo = num => num * 2;
 
 /**
- * ### Challenge `carMaker`
+ * ### Chall  enge `carM aker`
  * THIS ONE IS A STRETCH GOAL. ATTEMPT IT ONLY AFTER
  * COMPLETING ALL NON-STRETCH CHALLENGES IN THE REPOSITORY!
  *
