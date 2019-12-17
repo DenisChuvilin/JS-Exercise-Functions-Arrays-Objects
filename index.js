@@ -294,9 +294,7 @@ function getGermanCars(inventory) {
 const sum = (a, b) => a + b;
 const addFive = num => num + 5;
 const argTimesTwo = num => num * 2;
-console.log(sum(3, 2));
-console.log(addFive(3));
-console.log(argTimesTwo(2));
+
 /**
  * ### Challenge `carMaker`
  * THIS ONE IS A STRETCH GOAL. ATTEMPT IT ONLY AFTER
@@ -310,9 +308,17 @@ console.log(argTimesTwo(2));
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
  */
-function carMaker(/* code here */) {
-  /* code here */
+function carMaker(miles) {
+  const car = {
+    odometer: miles,
+    drive: function(miles) {
+      return (car.odometer += miles);
+    },
+  };
+  return car;
 }
+
+console.log(carMaker(123));
 
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////
